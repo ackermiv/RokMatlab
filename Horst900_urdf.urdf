@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Horst900_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 -0.3825 -0.382"
+        rpy="-1.57079632679 0 0" />
+      <mass
+        value="1.21" />
+      <inertia
+        ixx="0.011177"
+        ixy="-7.4313E-08"
+        ixz="-1.2107E-13"
+        iyy="0.011689"
+        iyz="-8.7273E-11"
+        izz="0.022837" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 -0.3825 -0.382"
+        rpy="-1.57079632679 0 0" />  <!-- "-1.57079632679" fuer 90 grad drehung-->
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 -0.3825 -0.382"
+        rpy="-1.57079632679 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="0 0 0" 
+        rpy="0 0 0" />
+      <mass
+        value="0.06735" />
+      <inertia
+        ixx="1.3452E-05"
+        ixy="2.57E-10"
+        ixz="5.3266E-22"
+        iyy="2.558E-05"
+        iyz="9.6363E-22"
+        izz="1.3706E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0" 
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0" 
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="0.02505 -0.3825 2.8818E-05"
+      rpy="1.57079632679 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="-0.029702 -0.40976 -4.6582E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.22367" />
+      <inertia
+        ixx="0.00056209"
+        ixy="-0.00045945"
+        ixz="-7.5228E-12"
+        iyy="0.00056962"
+        iyz="-1.4504E-11"
+        izz="0.0011293" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="-0.00038936 0.40659 5.3774E-05"
+      rpy="0 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="1.0238E-07 -0.00040062 -0.15402"
+        rpy="0 0 0" />
+      <mass
+        value="0.25309" />
+      <inertia
+        ixx="0.00057293"
+        ixy="-1.7292E-10"
+        ixz="-6.921E-10"
+        iyy="0.00051593"
+        iyz="-1.8197E-05"
+        izz="8.4556E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.54902 0.70588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="0.13873 0.03648 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="0.11141 -0.0035332 -0.00016495"
+        rpy="0 0 0" />
+      <mass
+        value="0.038503" />
+      <inertia
+        ixx="6.2907E-05"
+        ixy="-2.0171E-05"
+        ixz="-3.1267E-08"
+        iyy="0.00024462"
+        iyz="-7.0774E-09"
+        izz="0.00022597" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="-0.0002 0 0.292"
+      rpy="0 1.5708 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="-0.01505 1.1344E-07 -0.064247"
+        rpy="0 0 0" />
+      <mass
+        value="0.025507" />
+      <inertia
+        ixx="2.1268E-05"
+        ixy="1.0397E-11"
+        ixz="-2.7343E-07"
+        iyy="1.9292E-05"
+        iyz="2.3385E-11"
+        izz="1.2407E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="revolute">
+    <origin
+      xyz="-0.0001 -0.03975 0"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="0.00032332 -0.44132 0.57131"
+        rpy="0 0 0" />
+      <mass
+        value="1.8181" />
+      <inertia
+        ixx="0.20278"
+        ixy="7.6264E-06"
+        ixz="1.8596E-05"
+        iyy="0.19047"
+        iyz="0.01729"
+        izz="0.036763" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Horst900_urdf/meshes/Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0.012"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
