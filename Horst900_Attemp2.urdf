@@ -3,22 +3,22 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="Horst900_urdf">
+  name="Horst900_Attemp2">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-1.10008441578959E-06 -2.59902548317776E-08 0.00587587369802737"
+        xyz="-1.1001E-06 -2.599E-08 0.0058759"
         rpy="0 0 0" />
       <mass
-        value="1.20995872182931" />
+        value="1.21" />
       <inertia
-        ixx="0.011176840688249"
-        ixy="-7.43134651396119E-08"
-        ixz="-1.21067746953383E-13"
-        iyy="0.0116888232164381"
-        iyz="-8.72733373911202E-11"
-        izz="0.022837001203136" />
+        ixx="0.011177"
+        ixy="-7.4313E-08"
+        ixz="-1.2107E-13"
+        iyy="0.011689"
+        iyz="-8.7273E-11"
+        izz="0.022837" />
     </inertial>
     <visual>
       <origin
@@ -26,12 +26,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/base_link.STL" />
+          filename="package://Horst900_Attemp2/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+          rgba="0.89804 0.91765 0.92941 1" />
       </material>
     </visual>
     <collision>
@@ -40,25 +40,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/base_link.STL" />
+          filename="package://Horst900_Attemp2/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
   <link
-    name="Link1">
+    name="link1">
     <inertial>
       <origin
-        xyz="-0.0243471965194097 -0.174057923952762 -0.00311072110048385"
+        xyz="0.0007028 0.15394 -0.0031395"
         rpy="0 0 0" />
       <mass
-        value="0.0673503751305048" />
+        value="0.06735" />
       <inertia
-        ixx="1.34524094532674E-05"
-        ixy="2.57003494848309E-10"
-        ixz="5.32658016671096E-22"
-        iyy="2.55795578627657E-05"
-        iyz="9.63627341415568E-22"
-        izz="1.370612679698E-05" />
+        ixx="1.3452E-05"
+        ixy="2.57E-10"
+        ixz="6.9854E-22"
+        iyy="2.558E-05"
+        iyz="8.8646E-22"
+        izz="1.3706E-05" />
     </inertial>
     <visual>
       <origin
@@ -66,12 +66,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link1.STL" />
+          filename="package://Horst900_Attemp2/meshes/link1.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+          rgba="0.89804 0.91765 0.92941 1" />
       </material>
     </visual>
     <collision>
@@ -80,22 +80,22 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link1.STL" />
+          filename="package://Horst900_Attemp2/meshes/link1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="Joint1"
+    name="joint1"
     type="revolute">
     <origin
-      xyz="0.02505 2.8818E-05 0.3825"
+      xyz="0 0 0.0565"
       rpy="1.5708 0 0" />
     <parent
       link="base_link" />
     <child
-      link="Link1" />
+      link="link1" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 -1 0" />
     <limit
       lower="0"
       upper="0"
@@ -103,20 +103,20 @@
       velocity="0" />
   </joint>
   <link
-    name="Link2">
+    name="link2">
     <inertial>
       <origin
-        xyz="-0.029702343184986 -0.409760240673284 -4.65822315925818E-09"
+        xyz="-0.029492 -0.0027479 2.4951E-05"
         rpy="0 0 0" />
       <mass
-        value="0.223671456970964" />
+        value="0.22367" />
       <inertia
-        ixx="0.000562087758771331"
-        ixy="-0.000459454943235984"
-        ixz="-7.52282251083154E-12"
-        iyy="0.000569624401169127"
-        iyz="-1.45041949714578E-11"
-        izz="0.00112932630335917" />
+        ixx="0.00056209"
+        ixy="-0.00045945"
+        ixz="-7.5228E-12"
+        iyy="0.00056962"
+        iyz="-1.4504E-11"
+        izz="0.0011293" />
     </inertial>
     <visual>
       <origin
@@ -124,12 +124,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link2.STL" />
+          filename="package://Horst900_Attemp2/meshes/link2.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+          rgba="0.25098 0.25098 0.25098 1" />
       </material>
     </visual>
     <collision>
@@ -138,20 +138,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link2.STL" />
+          filename="package://Horst900_Attemp2/meshes/link2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="Joint2"
+    name="joint2"
     type="revolute">
     <origin
-      xyz="-0.00038936 0.40659 5.3774E-05"
+      xyz="0.05675 0.28257 0"
       rpy="0 0 0" />
     <parent
-      link="Link1" />
+      link="link1" />
     <child
-      link="Link2" />
+      link="link2" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -161,20 +161,20 @@
       velocity="0" />
   </joint>
   <link
-    name="Link3">
+    name="link3">
     <inertial>
       <origin
-        xyz="1.02376023631154E-07 -0.00040061746647424 -0.154022655225562"
+        xyz="-2.4854E-05 0.036079 -0.015293"
         rpy="0 0 0" />
       <mass
-        value="0.253092969796525" />
+        value="0.25309" />
       <inertia
-        ixx="0.000572934373597899"
-        ixy="-1.72920146889953E-10"
-        ixz="-6.92098266106379E-10"
-        iyy="0.000515926869219746"
-        iyz="-1.81971765070165E-05"
-        izz="8.45564221898107E-05" />
+        ixx="0.00057293"
+        ixy="-1.7292E-10"
+        ixz="-6.921E-10"
+        iyy="0.00051593"
+        iyz="-1.8197E-05"
+        izz="8.4556E-05" />
     </inertial>
     <visual>
       <origin
@@ -182,12 +182,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link3.STL" />
+          filename="package://Horst900_Attemp2/meshes/link3.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0 0.549019607843137 0.705882352941176 1" />
+          rgba="0 0.54902 0.70588 1" />
       </material>
     </visual>
     <collision>
@@ -196,22 +196,22 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link3.STL" />
+          filename="package://Horst900_Attemp2/meshes/link3.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="Joint3"
+    name="joint3"
     type="revolute">
     <origin
-      xyz="0.13873 0.03648 0"
+      xyz="6.7742E-05 0.407 0"
       rpy="0 1.5708 0" />
     <parent
-      link="Link2" />
+      link="link2" />
     <child
-      link="Link3" />
+      link="link3" />
     <axis
-      xyz="0 0 1" />
+      xyz="1 0 0" />
     <limit
       lower="0"
       upper="0"
@@ -219,20 +219,20 @@
       velocity="0" />
   </joint>
   <link
-    name="Link4">
+    name="link4">
     <inertial>
       <origin
-        xyz="0.111413290125393 -0.0035332321674294 -0.000164952546531858"
+        xyz="-0.19659 -0.0035332 3.5047E-05"
         rpy="0 0 0" />
       <mass
-        value="0.0385025243577973" />
+        value="0.038503" />
       <inertia
-        ixx="6.29068792007337E-05"
-        ixy="-2.01708891086145E-05"
-        ixz="-3.12674462800254E-08"
-        iyy="0.000244622151636622"
-        iyz="-7.07738410976585E-09"
-        izz="0.000225971905618663" />
+        ixx="6.2907E-05"
+        ixy="-2.0171E-05"
+        ixz="-3.1267E-08"
+        iyy="0.00024462"
+        iyz="-7.0774E-09"
+        izz="0.00022597" />
     </inertial>
     <visual>
       <origin
@@ -240,12 +240,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link4.STL" />
+          filename="package://Horst900_Attemp2/meshes/link4.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+          rgba="0.25098 0.25098 0.25098 1" />
       </material>
     </visual>
     <collision>
@@ -254,22 +254,22 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link4.STL" />
+          filename="package://Horst900_Attemp2/meshes/link4.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="Joint4"
+    name="joint4"
     type="revolute">
     <origin
-      xyz="-0.0002 0 0.292"
+      xyz="-2.4956E-05 0.03648 0.12703"
       rpy="0 1.5708 0" />
     <parent
-      link="Link3" />
+      link="link3" />
     <child
-      link="Link4" />
+      link="link4" />
     <axis
-      xyz="0 0 1" />
+      xyz="1 0 0" />
     <limit
       lower="0"
       upper="0"
@@ -277,20 +277,20 @@
       velocity="0" />
   </joint>
   <link
-    name="Link5">
+    name="link5">
     <inertial>
       <origin
-        xyz="-0.0150495859528067 1.13443622945037E-07 -0.0642474759419666"
+        xyz="-0.014949 -0.00019999 -0.024498"
         rpy="0 0 0" />
       <mass
-        value="0.0255070628905158" />
+        value="0.025507" />
       <inertia
-        ixx="2.12684319928873E-05"
-        ixy="1.03967790145869E-11"
-        ixz="-2.73429737364249E-07"
-        iyy="1.9292380169214E-05"
-        iyz="2.33846710996507E-11"
-        izz="1.24069857603559E-05" />
+        ixx="2.1268E-05"
+        ixy="1.4476E-11"
+        ixz="-2.7343E-07"
+        iyy="1.9292E-05"
+        iyz="4.8717E-11"
+        izz="1.2407E-05" />
     </inertial>
     <visual>
       <origin
@@ -298,12 +298,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link5.STL" />
+          filename="package://Horst900_Attemp2/meshes/link5.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+          rgba="0.25098 0.25098 0.25098 1" />
       </material>
     </visual>
     <collision>
@@ -312,22 +312,22 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link5.STL" />
+          filename="package://Horst900_Attemp2/meshes/link5.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="Joint5"
+    name="joint5"
     type="revolute">
     <origin
-      xyz="-0.0001 -0.03975 0"
+      xyz="-0.308 0 0"
       rpy="-1.5708 0 3.1416" />
     <parent
-      link="Link4" />
+      link="link4" />
     <child
-      link="Link5" />
+      link="link5" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 1 0" />
     <limit
       lower="0"
       upper="0"
@@ -335,20 +335,20 @@
       velocity="0" />
   </joint>
   <link
-    name="Link6">
+    name="link6">
     <inertial>
       <origin
-        xyz="0.000323322362963369 -0.441317002257715 0.571312567367561"
+        xyz="0.46804 -6.2595E-05 0.59277"
         rpy="0 0 0" />
       <mass
-        value="1.81808855431787" />
+        value="1.8181" />
       <inertia
-        ixx="0.202782984804072"
-        ixy="7.62638398262086E-06"
-        ixz="1.85957007605564E-05"
-        iyy="0.190473605772454"
-        iyz="0.0172898656096988"
-        izz="0.0367625081394546" />
+        ixx="0.17075"
+        ixy="-3.9322E-07"
+        ixz="-0.023792"
+        iyy="0.18483"
+        iyz="3.8068E-05"
+        izz="0.038533" />
     </inertial>
     <visual>
       <origin
@@ -356,12 +356,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link6.STL" />
+          filename="package://Horst900_Attemp2/meshes/link6.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+          rgba="0.25098 0.25098 0.25098 1" />
       </material>
     </visual>
     <collision>
@@ -370,22 +370,22 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Horst900_urdf/meshes/Link6.STL" />
+          filename="package://Horst900_Attemp2/meshes/link6.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="Joint6"
+    name="joint6"
     type="revolute">
     <origin
-      xyz="0 0 0.012"
-      rpy="0 0 -1.5708" />
+      xyz="0.0001 -0.0002 0"
+      rpy="0 0 3.1416" />
     <parent
-      link="Link5" />
+      link="link5" />
     <child
-      link="Link6" />
+      link="link6" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 0 -1" />
     <limit
       lower="0"
       upper="0"

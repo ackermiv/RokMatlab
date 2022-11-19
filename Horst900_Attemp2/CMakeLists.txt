@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(Horst900_urdf)
+project(Horst900_Attemp2)
 
 find_package(catkin REQUIRED)
 
