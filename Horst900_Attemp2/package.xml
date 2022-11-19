@@ -1,10 +1,10 @@
 <package format="2">
-  <name>Horst900_urdf</name>
+  <name>Horst900_Attemp2</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for Horst900_urdf</p>
+    <p>URDF Description package for Horst900_Attemp2</p>
     <p>This package contains configuration data, 3D models and launch files
-for Horst900_urdf robot</p>
+for Horst900_Attemp2 robot</p>
   </description>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />
