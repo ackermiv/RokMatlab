@@ -8,9 +8,11 @@ horst.DataFormat = 'column';
 ax = show(horst);
 %open_system('Aufbau_Horst.slx')
 
+simtime = 1;
 x = 0.5*zeros(1,4)+0.25;
 y = 0.25*[-1 -1 1 1];
 z = 0.25*[-1 1 -1 1] + 0.75;
+timevector = linspace(0,simtime,4);
 
 hold on
 plot3(x,y,z,'--r','LineWidth',2,'Parent',ax)
@@ -36,6 +38,6 @@ figure('Visible','on')
 show(horst,configs.Data(:,1,end));
 
 hold on
-plot3(xyz(:,1),xyz(:,2),xyz(:,3),'-k','LineWidth',3);
-plot3(x,y,z,'--r','LineWidth',3)
+plot3(xyz(:,1)+0.07,xyz(:,2),xyz(:,3)+0.06,'-k','LineWidth',3);
+plot3(x+0.07,y,z+0.06,'--r','LineWidth',3)
 hold off
