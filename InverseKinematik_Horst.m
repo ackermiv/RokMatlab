@@ -37,7 +37,7 @@ end
 figure('Visible','on')
 show(horst,configs.Data(:,1,end));
 
-hold on
+hold on 
 plot3(xyz(:,1)+0.07,xyz(:,2),xyz(:,3)+0.06,'-k','LineWidth',3);
 plot3(x+0.07,y,z+0.06,'--r','LineWidth',3)
 hold off
