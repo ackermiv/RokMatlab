@@ -4,9 +4,11 @@ clear
 horst = importrobot('Horst900_Attemp2.urdf');
 horst.DataFormat = 'column';
 
-
-ax = show(horst);
+app.figureHorst=figure('Name','Horst 900','NumberTitle','off','Position',[764 200 600 425]);
+hold on
+show(horst);
 %open_system('Aufbau_Horst.slx')
+hold off 
 
 simtime = 1;
 x = 0.5*zeros(1,4)+0.25;
