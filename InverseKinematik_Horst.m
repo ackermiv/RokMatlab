@@ -1,6 +1,10 @@
 close all
 clear
 
+%Adding the stl files to the path
+p = genpath('Horst900_Attemp2\');
+addpath(p);
+
 horst = importrobot('Horst900_Attemp2.urdf');
 horst.DataFormat = 'column';
 
