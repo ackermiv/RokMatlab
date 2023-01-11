@@ -8,7 +8,7 @@ addpath(p);
 horst = importrobot('Horst900_Attemp2.urdf');
 horst.DataFormat = 'column';
 
-app.figureHorst=figure('Name','Horst 900','NumberTitle','off','Position',[764 200 600 425]);
+ax=figure('Name','Horst 900','NumberTitle','off','Position',[764 200 600 425]);
 hold on
 show(horst);
 %open_system('Aufbau_Horst.slx')
