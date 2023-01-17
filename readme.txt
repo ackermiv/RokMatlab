@@ -8,4 +8,4 @@ Vorwärtskinematik:
 Inverse Kinematik:
 1) InverseKinematik_Horst ausfuehren
     - zeigt den bewegten roboter
-    - zeigt den absolvierten (rot) im vergleich zum vorgesehen pfad (schwarz)
+    - zeigt den absolvierten (schwarz) im vergleich zum vorgesehen pfad (rot)
